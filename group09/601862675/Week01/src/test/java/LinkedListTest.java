@@ -3,9 +3,6 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.contrib.java.lang.system.SystemOutRule;
 
-/**
- * Created by spike on 2/20/17.
- */
 public class LinkedListTest {
 
     @Rule

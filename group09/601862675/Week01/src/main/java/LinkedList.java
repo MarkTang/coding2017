@@ -77,8 +77,12 @@ public class LinkedList implements List {
         }
         LinkedListNode target = findNodeByIndex(index);
         if (target == head) {
-            head = head.next;
-            head.prev = null;
+            if (head == tail) {
+                head = tail = null;
+            } else {
+                head = head.next;
+                head.prev = null;
+            }
         } else if (target == tail) {
             tail = tail.prev;
             tail.next = null;
